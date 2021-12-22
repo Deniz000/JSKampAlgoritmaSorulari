@@ -1,4 +1,4 @@
-function findPrime(...numbers) {
+let findPrime = (...numbers) => {
     for (let i = 0; i < numbers.length; i++) {
         let newNumber = numbers[i]
         let sayac = 0
@@ -21,7 +21,7 @@ function findPrime(...numbers) {
 findPrime(2, 5, 8, 21, 13)
 console.log("*********************")
 
-function findFriend(num1, num2) {
+let findFriend = (num1, num2) => {
     let sumNum1 = 0, sumNum2 = 0
     for (let i = 1; i < num1; i++) {
         if (num1 % i == 0) {
@@ -46,7 +46,7 @@ findFriend(220, 284)
 
 console.log("*********************")
 
-function findPerfectNumber(param) {
+let findPerfectNumber = param => {
 
     for (let j = 1; j < param; j++) {
         let number = j
@@ -66,7 +66,7 @@ findPerfectNumber(1000)
 console.log("*********************")
 
 
-function allNumbers() {
+let allNumbers = () => {
     for (let i = 0; i < 1000; i++) {
         let num = i
         let sayac = 0
